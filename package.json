@@ -4,6 +4,10 @@
   "description": "Cooperative puzzle game with cubes, built with TypeScript, based on NodeJS and WebSockets. Server side.",
   "main": "index.js",
   "scripts": {
+    "typings": "typings",
+    "tsc": "tsc",
+    "express": "node src/app.js",
+    "start": "npm run tsc && npm run express",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +22,9 @@
   "homepage": "https://github.com/noemi-salaun/coop-cube.server#readme",
   "private": true,
   "devDependencies": {
-    "typescript": "^2.0.3"
+    "@types/express": "^4.0.33",
+    "typescript": "^2.0.3",
+    "typings": "^1.4.0"
   },
   "dependencies": {
     "express": "^4.14.0"
